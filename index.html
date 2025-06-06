@@ -3,20 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alvfer356</title>
+    <title>AlvaroFer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>aqui va la barra de navegacion</nav>
+   <header> 
+        <h2>AlvaroFer</h2>
+        <nav>
+            <i class="fa-solid fa-bars"></i>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#acercaDeMi">Acerca de mí</a></li>
+                <li><a href="#contactame">Contáctame</a></li>
+            </ul>
+        </nav>
     </header>
-   <main>
- <section id="inicio">aqui va el home</section>
- <section id="proyectos">aqui van los proyectos</section>
- <section id="acercaDeMi">aqui la seccion acerca de mi</section>
- <section id="contactame">cuentame</section>
-   </main>
-   <footer>aqui va el footer</footer>
+    <main>
+        <section id="inicio"> 
+          <div class="contenidoHome">
+            <h1>Hola, <br> Soy AlvaroFer</h1>
+            <h2 class="subtituloHome">Soy un Desarrollador de Software</h2>
+            <p class="descripcionHome">Tienes una idea increíble: un producto, una función, o una web. Mi misión es transformarla en realidad digital.
+                <br>He construido historias de <br> éxito para otros, pixel <br> a pixel, línea a línea. 
+            </p>
+            <div class="redesSociales">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-reddit-alien"></i>
+                <i class="fa-brands fa-stack-overflow"></i>
+                <i class="fa-brands fa-facebook-messenger"></i>
+            </div>
+          </div>
+        </section>
+        <section id="proyectos">aqui van los proyectos</section>
+        <section id="acercaDeMi">
+            <div class="top">
+                <h2>Acerca de mi</h2>
+                <p>¡Hola! Mi código da vida a tus ideas. ¿Necesitas un producto, funcionalidad o sitio web? Aquí encontrarás mi trayectoria y proyectos. ¿Te gusta algo de lo que ves? Si buscas un desarrollador apasionado, ¡escríbeme! Juntos podemos crear algo increíble.</p>
+                <button>Descarga mi CV</button>
+            </div>
+            <div class="bottom">
+                <div class="lenguajes">
+                    <div class="addSimbolo"> 
+                        <span> &#9670 </span>
+                        <h3>Lenguajes</h3> 
+                    </div>
+                    <p>JavaScript</p>
+                    <p>NodeJS</p>
+                    <p>SQL</p>
+                    <p>HTML/CSS</p>
+                </div>
+                <div class="frameworks">
+                    <div class="addSimbolo"> 
+                        <span> &#9670 </span>
+                        <h3>Frameworks</h3> 
+                    </div>
+                    <p>React</p>
+                    <p>Express</p>
+                    <p>PostgreSQL</p>
+                    <p>MongoDB</p>
+                </div>
+                <div class="skills">
+                    <div class="addSimbolo"> 
+                        <span> &#9670 </span>
+                        <h3>Skills</h3> 
+                    </div>
+                    <p>AI-Powered Development</p>
+                    <p>Administracion de Bases de Datos</p>
+                    <p>Seguridad Informatica</p>
+                    <p>Desarrollo Web</p>
+                </div>
+            </div>
+        </section>
+        <section id="contactame">contactame</section>
+    </main>
+    <footer>aqui va el footer</footer> 
     <script src="app.js"></script>
 </body>
 </html>

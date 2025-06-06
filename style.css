@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3e3c3c;
+    padding: 1rem;   
+}
+
+header h2 {
+    color: #fff;
+}
+
+.fa-bars {
+    color: #fff;
+}
+
+#inicio {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+
+    background-color: #1c1a19;
+    background-image: url(img/Illustration.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.contenidoHome {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5rem;
+}
+
+h1 {
+    font-family: 'Crete Round', sans-serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    letter-spacing: 0.37px;
+    color: #ff6b00;
+}
+
+.subtituloHome {
+    font-family: 'Roboto', Arial;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #fff5e1;
+}
+
+.descripcionHome {
+    font-family: 'Poppins', Arial;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #fff;
+}
+
+.redesSociales {
+    display: flex;
+    gap: 1rem;
+}
+
+.fa-brands {
+    color: #fff;
+    padding: 4% 0;
+    font-size: 1.4rem;
+}
+
+#proyectos {
+    height: 100vh;
+    width: 100vw;
+}
+
+#contactame {
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+/* Seccion Acerca de Mi  */
+
+#acercaDeMi {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #1c1a19;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.top {
+    margin-bottom: 2rem;
+    background-image: url(img/Frame.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.top h2 {
+    font-family: 'Crete Round', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-weight: 400;
+    font-size: 3.5rem; 
+    line-height: 3.5rem; 
+    letter-spacing: 0.37px;
+    color: #ff6b00;
+}
+
+.top p {
+    font-family: 'Inter', Arial;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    color: #f4f5f7;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.top button {
+    background-color: #ff6b00;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    
+    font-family: 'Inter', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    
+    cursor: pointer;    
+    transition: background-color 0.3s ease;
+}
+
+.top button:hover {
+    background-color: #d65200;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 800px; 
+    border-top: 1px solid #fff;
+}
+
+.addSimbolo {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.addSimbolo span {
+    color: #ff6b00;
+    font-size: 2rem;
+}
+
+.lenguajes,
+.frameworks,
+.skills {
+   
+    padding: 1.5rem;
+    border-radius: 8px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.lenguajes h3,
+.frameworks h3,
+.skills h3 {
+    font-family: 'Roboto', Arial;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #fff5e1;
+    text-align: left;
+}
+
+.lenguajes p,
+.frameworks p,
+.skills p {
+    font-family: 'Poppins', Arial;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #fff;
+    text-align: left;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: none; /* Hide the navigation links by default */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    left: 0;
+    width: 100%;
+    background-color: #3e3c3c;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 10; /* Ensure it's on top of other content */
+}
+
+.nav-links li {
+    padding: 1rem;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.fa-bars {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+    #acercaDeMi {
+        padding: 3rem;
+    }
+
+    .top h2 {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+
+    .bottom {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .lenguajes,
+    .frameworks,
+    .skills {
+        width: 30%;
+    }
+
+    .nav-links {
+        display: flex; /* Show nav links in a row */
+        position: static; /* Remove absolute positioning */
+        flex-direction: row;
+        width: auto;
+        background-color: transparent;
+    }
+
+    .nav-links li {
+        padding: 0 1rem;
+    }
+
+    .fa-bars {
+        display: none; /* Hide the hamburger icon */
+    }
+}
