@@ -20,6 +20,18 @@ header h2 {
     color: #fff;
 }
 
+.nav-links {
+
+    height: 100%;
+    font-family: 'Inter',serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.nav-links li {
+    font-size: 1rem;
+}
+
 #inicio {
     height: 90vh;
     width: 100vw;
@@ -63,6 +75,9 @@ h1 {
     color: #fff;
 }
 
+.contEscritorio h2 {
+    padding: 1rem 0;
+}
 .redesSociales {
     display: flex;
     gap: 1rem;
@@ -75,10 +90,138 @@ h1 {
 }
 
 #proyectos {
-    height: 100vh;
+    display: flex;
     width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+.proyectoN {
+  max-width: 360px;
+  margin: 0 2rem;  
+}
+
+.container {
+  position: relative;
+  max-width: 390px;
+  
+}
+
+.image {
+  display: block;
+  width: 100%;
+  max-width: 390px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+
+  background: linear-gradient(to top, #262626, #26262650);
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  font-family: 'Inter', serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+}
+.text p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+    text-align: left;
+}
+
+.ContenedorTech {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 2em;
+    background-color: #262626;
+    padding: 0.5rem 1rem;
+    font-size: 0.5rem;
+    width: 16rem;
+}
+
+.text h2 {
+    font-family: 'Crete Round', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    list-style: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.boton {
+    background-color: #f55800;
+    color: #fff;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 #contactame {
     height: 100vh;
     width: 100vw;
@@ -277,4 +420,74 @@ nav {
     .fa-bars {
         display: none; /* Hide the hamburger icon */
     }
+}
+/* Formulario de Contacto Moderno */
+
+#contactame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+}
+
+.contact-container {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container input,
+.contact-container textarea {
+  padding: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  border-color: #ff6b00;
+}
+
+.contact-container textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-container button {
+  background-color: #ff6b00;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contact-container button:hover {
+  background-color: #cf3a35;
 }

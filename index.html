@@ -40,16 +40,12 @@
             </div>
           </div>
         </section>
-        <section id="proyectos">aqui van los proyectos</section>
+        <section id="proyectos"></section>  // generado desde JavaScript
         <section id="acercaDeMi">
-            <div class="top">
-                <h2>Acerca de mi</h2>
-                <p>¡Hola! Mi código da vida a tus ideas. ¿Necesitas un producto, funcionalidad o sitio web? Aquí encontrarás mi trayectoria y proyectos. ¿Te gusta algo de lo que ves? Si buscas un desarrollador apasionado, ¡escríbeme! Juntos podemos crear algo increíble.</p>
-                <button>Descarga mi CV</button>
             </div>
             <div class="bottom">
                 <div class="lenguajes">
-                    <div class="addSimbolo"> 
+                    <div class="addSimbolo circulo"> 
                         <span> &#9670 </span>
                         <h3>Lenguajes</h3> 
                     </div>
@@ -59,7 +55,7 @@
                     <p>HTML/CSS</p>
                 </div>
                 <div class="frameworks">
-                    <div class="addSimbolo"> 
+                    <div class="addSimbolo cuadrado"> 
                         <span> &#9670 </span>
                         <h3>Frameworks</h3> 
                     </div>
@@ -69,7 +65,7 @@
                     <p>MongoDB</p>
                 </div>
                 <div class="skills">
-                    <div class="addSimbolo"> 
+                    <div class="addSimbolo triangulo"> 
                         <span> &#9670 </span>
                         <h3>Skills</h3> 
                     </div>
@@ -80,7 +76,19 @@
                 </div>
             </div>
         </section>
-        <section id="contactame">contactame</section>
+       <section id="contactame">
+  <div class="contact-container">
+    <h2>I'm always interested in hearing about new projects,<br>
+    so if you'd like to chat please get in touch.</h2>
+
+    <form action="https://formspree.io/f/xanjeljd" method="post">
+      <input type="text" id="name" name="user_name" placeholder="Full name" maxlength="30" required>
+      <input type="email" id="mail" name="user_mail" placeholder="Email address" maxlength="30" required>
+      <textarea id="msg" name="user_message" placeholder="Write me something..." maxlength="500" required></textarea>
+      <button type="submit">Get in touch</button>
+    </form>
+  </div>
+</section>
     </main>
     <footer>aqui va el footer</footer> 
     <script src="app.js"></script>
